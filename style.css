@@ -1,0 +1,183 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #b4b4b4;
+	margin: 0px;
+	background-color: #18191a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+hr {
+	margin: 0px 15px;
+}
+
+header {
+	background-color: #2d2f30;
+	padding: 2px 30px;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header.hide {
+	top: -100px;
+}
+
+#burgerMenu {
+	display: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+nav {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#home>a {
+	text-decoration: none;
+	color: #f3f3f3;
+	font-size: large;
+}
+
+nav ul {
+	padding: 0px;
+	display: flex;
+	flex-direction: row;
+}
+
+nav>ul>li {
+	display: flex;
+	list-style-type: none;
+	margin: 0px 5px;
+}
+
+nav>ul>li>a {
+	text-decoration: none;
+	color: #f3f3f3;
+	background: #444444;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+nav>ul>li>a:hover {
+	background: #f3f3f3;
+	color: #444444;
+}
+
+nav a:hover {
+	color: white;
+}
+
+.kartu {
+	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 20px;
+}
+
+.kartu-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.kartu-item-content {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+}
+
+li::marker {
+	color: white;
+}
+
+.kartu-item-title {
+	display: flex;
+	flex-direction: row;
+	column-gap: 15px;
+}
+
+#dashboard {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 100vh;
+}
+
+#dashboard>section>p {
+	margin: 0;
+	padding: 10px 0;
+	font-size: 50px;
+}
+
+#foto-profil {
+	max-width: 250px;
+}
+
+.logo-item {
+	max-width: 80px;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	font-size: larger;
+}
+
+@media screen and (max-width: 768px) {
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	nav {
+		display: none;
+		flex-direction: column;
+		position: absolute;
+		top: 50px;
+		right: 15px;
+		width: fit-content;
+		background-color: #333;
+		border-radius: 10px;
+	}
+
+	nav.show {
+		display: flex;
+	}
+
+	#burgerMenu {
+		display: block;
+	}
+
+	nav ul {
+		flex-direction: column;
+		justify-content: space-around;
+		padding: 15px;
+	}
+
+	nav>ul>li>a {
+		margin: 5px;
+	}
+
+	#dashboard {
+		flex-direction: column;
+	}
+}
