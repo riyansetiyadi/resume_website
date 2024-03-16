@@ -1,1 +1,3 @@
-Resume berbasis website yang digunakan sebagai tugas akhir kelas Belajar Dasar Pemrograman Web di Dicoding. Website dibuat menggunakan HTML, CSS, & Javascript.
+# Simple Resume Website
+
+This is a simple website project created as part of Dicoding's "Belajar Dasar Pemrograman Web" class. The website is built using native HTML, CSS for styling, and includes some basic JavaScript functionality. It serves as a showcase of my resume and profile.
